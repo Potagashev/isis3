@@ -6,7 +6,7 @@
 git clone https://github.com/Potagashev/isis3.git
 ```
 ```
-docker-compose up
+docker-compose up --build
 ```
 Перейти по ссылке
 ```
