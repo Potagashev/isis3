@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить публикацию</title>
+</head>
+<body>
+    <div><a href="http://localhost:80/">На главную</a></div>
+    <h2>Новая публикация</h2>
+    <form method="post" action="http://localhost/add_post">
+        <p>Заголовок<br/>
+            <input maxlength="30" name="title" type="text" required>
+        </p>
+        <p>Автор<br/>
+            <input name="author" maxlength="30" type="text" required>
+        </p>
+        <p>Текст публикации<br/>
+            <textarea rows="10" cols="45" maxlength="1000" name="content" required></textarea>
+        </p>
+        <input type="submit" value="Опубликовать">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статьи и Публикации</title>
+</head>
+<body>
+    <h1>Статьи и публикации</h1>
+    <div><a href="http://localhost:80/add_post">Написать статью</a></div>
+    {% if posts %}
+    {% for post in posts %}
+    <div><h3>{{ post[0] }}</h3></div>
+    <div><p>Author: {{ post[1] }}</p></div>
+    <div><p>{{ post[2] }}</p></div>
+    <div>------------------------------------------</div>
+    {% endfor %}
+    {% else %}
+    <h2>Кажется, никто еще не выкладывал статьи :(</h2>
+    {% endif %}
+</body>
+</html>
